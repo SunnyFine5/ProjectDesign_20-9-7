@@ -1,0 +1,226 @@
+.container{
+  margin-top: 10px;
+  background-color:#fff;
+  overflow-x: hidden;
+  .btn-submit{
+    text-align: right;
+    margin:50px 20px;
+  }
+  
+  .title{
+    font-size: 20px;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-bottom: 20px;
+  }
+  .title::after{
+    content:'';
+    display: block;
+    height: 1px;
+    width:100%;
+    margin-top: 8px;
+    background: #e5e5e5;
+  }
+  .app-selected  {
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    :global{
+      .btns{
+        height:35px ;
+        width: 180px;
+        position: relative;
+        background-color: #29BECE;
+        padding-top: 6px;
+        padding-right: 30px;
+        padding-left: 15px;
+        margin-top: 20px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+      }
+      .btns-span{
+        color:white;
+        font-size: 15px;
+      }
+      .btns-icon{
+        position: absolute;
+        padding-top: 1px;
+        right: 8px;
+        font-size:20px;
+        color:white;
+      }
+    }
+  }
+  
+  //设置Form中col的排版
+  .writable-row-custom {
+    TextArea,Button{font-size: 15px;}
+    :global{
+      .app-icon{
+        float: right;
+      }
+      .ant-form-item{
+         font-size: 15px;
+         label{
+           font-size: 15px;
+         }
+      }
+      .ant-form-item-label{
+        font-size: 15px;
+         text-align: left;
+         padding-left: 18px;
+      }
+      .ant-col-16 {
+        position: relative!important;
+        padding-right:72px!important ;
+        .ant-row[class*="test"]{
+          .ant-col-4{
+            width:18.75%!important ;
+          }
+        }
+        .ant-col-20{
+          position: absolute!important;
+          left:18.75%!important ;
+          right: -48px!important;
+          width: initial!important;
+        }
+     }
+    }
+  }
+
+  
+
+}
+
+
+.body-content {
+  margin: 8px 16px 16px;
+}
+.service-tab {
+  min-height: 400px;
+}
+
+.open-service,
+.auth-info,
+.buy-cart {
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  margin-bottom: 1px;
+  .top-icon {
+    font-size: 28px;
+    color: #333;
+    margin-right: 12px;
+    vertical-align: sub;
+  }
+  span {
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+  }
+}
+.buy-cart {
+  margin-bottom: 0;
+  padding-right: 13px;
+}
+.app-store-top {
+  height: 272px;
+  margin-bottom: 16px;
+  .store-banner-container {
+    position: relative;
+    overflow: hidden;
+    .store-banner {
+      height: 272px;
+      border-radius: 5px;
+    }
+    .store-banner-bg {
+      height: 272px;
+      position: absolute;
+      top: 0;
+      right: -115px;
+      z-index: 999;
+      transition: all 0.5s;
+      -moz-transition: all 0.5s; /* Firefox 4 */
+      -webkit-transition: all 0.5s; /* Safari 和 Chrome */
+      -o-transition: all 0.5s; /* Opera */
+    }
+    &:hover .store-banner-bg {
+      height: 272px;
+      position: absolute;
+      top: 0;
+      right: 0px;
+      z-index: 888;
+      .contact-us {
+        height: 100%;
+        padding: 55px 40px;
+        vertical-align: sub;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        p {
+          line-height: 70px;
+          i {
+            font-size: 24px !important;
+          }
+        }
+      }
+    }
+  }
+  .store-top-right {
+    border-radius: 5px;
+    height: 272px;
+    padding-left: 10px;
+  }
+}
+
+.div-cart{
+  position: relative;
+  margin-bottom: 40px;
+  height: 260px;
+  background-color: #fff;
+  text-align: center;
+
+  .test{
+    background-color:#29BECE;
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .product-card {
+    height: 200px;
+    padding: 27px 20px 10px;
+    display: block;
+    p {
+      text-align: center;
+    }
+    p:nth-of-type(1) {
+      margin-bottom: 27px;
+    }
+}
+
+  .product-card-title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    padding: 0 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333;
+  }
+  .product-card-content {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 10px 0 rgba(48, 88, 227, 0.12);
+  }
+}
+
+
